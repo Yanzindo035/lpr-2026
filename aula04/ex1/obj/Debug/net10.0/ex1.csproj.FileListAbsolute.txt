@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\lpr-2026\aula04\ex1\bin\Debug\net10.0\ex1.exe
+C:\Users\PC\Desktop\lpr-2026\aula04\ex1\bin\Debug\net10.0\ex1.deps.json
+C:\Users\PC\Desktop\lpr-2026\aula04\ex1\bin\Debug\net10.0\ex1.runtimeconfig.json
+C:\Users\PC\Desktop\lpr-2026\aula04\ex1\bin\Debug\net10.0\ex1.dll
+C:\Users\PC\Desktop\lpr-2026\aula04\ex1\bin\Debug\net10.0\ex1.pdb
+C:\Users\PC\Desktop\lpr-2026\aula04\ex1\obj\Debug\net10.0\ex1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\lpr-2026\aula04\ex1\obj\Debug\net10.0\ex1.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\lpr-2026\aula04\ex1\obj\Debug\net10.0\ex1.AssemblyInfo.cs
+C:\Users\PC\Desktop\lpr-2026\aula04\ex1\obj\Debug\net10.0\ex1.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\lpr-2026\aula04\ex1\obj\Debug\net10.0\ex1.sourcelink.json
+C:\Users\PC\Desktop\lpr-2026\aula04\ex1\obj\Debug\net10.0\ex1.dll
+C:\Users\PC\Desktop\lpr-2026\aula04\ex1\obj\Debug\net10.0\refint\ex1.dll
+C:\Users\PC\Desktop\lpr-2026\aula04\ex1\obj\Debug\net10.0\ex1.pdb
+C:\Users\PC\Desktop\lpr-2026\aula04\ex1\obj\Debug\net10.0\ex1.genruntimeconfig.cache
+C:\Users\PC\Desktop\lpr-2026\aula04\ex1\obj\Debug\net10.0\ref\ex1.dll
