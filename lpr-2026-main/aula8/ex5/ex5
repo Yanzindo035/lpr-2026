@@ -1,0 +1,168 @@
+using System;
+
+struct Chamado
+{
+    public int numero;
+    public string solicitante;
+    public string setor;
+    public int prioridade;
+    public string status;
+    public string descricao;
+}
+
+class Program
+{
+    static Chamado[] chamados = new Chamado[10];
+    static int qtd = 0;
+
+    static void cadastrarChamado()
+    {
+        if (qtd < 10)
+        {
+            Console.Write("Número: ");
+            chamados[qtd].numero = int.Parse(Console.ReadLine());
+
+            Console.Write("Solicitante: ");
+            chamados[qtd].solicitante = Console.ReadLine();
+
+            Console.Write("Setor: ");
+            chamados[qtd].setor = Console.ReadLine();
+
+            Console.Write("Prioridade (1 a 3): ");
+            chamados[qtd].prioridade = int.Parse(Console.ReadLine());
+
+            Console.Write("Descrição: ");
+            chamados[qtd].descricao = Console.ReadLine();
+
+            chamados[qtd].status = "Aberto";
+
+            qtd++;
+
+            Console.WriteLine("Chamado cadastrado.");
+        }
+        else
+        {
+            Console.WriteLine("Limite de chamados atingido.");
+        }
+    }
+
+    static string classificarPrioridade(int p)
+    {
+        if (p == 1)
+            return "Baixa";
+
+        else if (p == 2)
+            return "Média";
+
+        else
+            return "Alta";
+    }
+
+    static void listarChamados()
+    {
+        for (int i = 0; i < qtd; i++)
+        {
+            Console.WriteLine("\nNúmero: " + chamados[i].numero);
+            Console.WriteLine("Solicitante: " + chamados[i].solicitante);
+            Console.WriteLine("Setor: " + chamados[i].setor);
+            Console.WriteLine("Prioridade: " + classificarPrioridade(chamados[i].prioridade));
+            Console.WriteLine("Status: " + chamados[i].status);
+            Console.WriteLine("Descrição: " + chamados[i].descricao);
+        }
+    }
+
+    static void atualizarStatus()
+    {
+        int numero;
+
+        Console.Write("Digite o número do chamado: ");
+        numero = int.Parse(Console.ReadLine());
+
+        for (int i = 0; i < qtd; i++)
+        {
+            if (chamados[i].numero == numero)
+            {
+                Console.WriteLine("1 - Em andamento");
+                Console.WriteLine("2 - Resolvido");
+                Console.WriteLine("3 - Cancelado");
+
+                int op = int.Parse(Console.ReadLine());
+
+                if (op == 1)
+                    chamados[i].status = "Em andamento";
+
+                else if (op == 2)
+                    chamados[i].status = "Resolvido";
+
+                else if (op == 3)
+                    chamados[i].status = "Cancelado";
+
+                Console.WriteLine("Status atualizado.");
+            }
+        }
+    }
+
+    static void estatisticas()
+    {
+        int aberto = 0;
+        int andamento = 0;
+        int resolvido = 0;
+        int cancelado = 0;
+
+        for (int i = 0; i < qtd; i++)
+        {
+            if (chamados[i].status == "Aberto")
+                aberto++;
+
+            else if (chamados[i].status == "Em andamento")
+                andamento++;
+
+            else if (chamados[i].status == "Resolvido")
+                resolvido++;
+
+            else if (chamados[i].status == "Cancelado")
+                cancelado++;
+        }
+
+        Console.WriteLine("\nAbertos: " + aberto);
+        Console.WriteLine("Em andamento: " + andamento);
+        Console.WriteLine("Resolvidos: " + resolvido);
+        Console.WriteLine("Cancelados: " + cancelado);
+    }
+
+    static void Main()
+    {
+        int op;
+
+        do
+        {
+            Console.WriteLine("\n1 - Cadastrar chamado");
+            Console.WriteLine("2 - Listar chamados");
+            Console.WriteLine("3 - Atualizar status");
+            Console.WriteLine("4 - Estatísticas");
+            Console.WriteLine("5 - Sair");
+
+            op = int.Parse(Console.ReadLine());
+
+            switch (op)
+            {
+                case 1:
+                    cadastrarChamado();
+                    break;
+
+                case 2:
+                    listarChamados();
+                    break;
+
+                case 3:
+                    atualizarStatus();
+                    break;
+
+                case 4:
+                    estatisticas();
+                    break;
+            }
+
+        } while (op != 5);
+    }
+}

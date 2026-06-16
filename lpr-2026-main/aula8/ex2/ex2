@@ -1,0 +1,39 @@
+using System;
+
+struct Produto
+{
+    public string nome;
+    public int codigo;
+    public double preco;
+    public int quantidade;
+}
+
+class Program
+{
+    static void Main()
+    {
+        Produto[] produtos = new Produto[3];
+        double total = 0;
+
+        for (int i = 0; i < 3; i++)
+        {
+            Console.WriteLine("Produto " + (i + 1));
+
+            Console.Write("Nome: ");
+            produtos[i].nome = Console.ReadLine();
+
+            Console.Write("Código: ");
+            produtos[i].codigo = int.Parse(Console.ReadLine());
+
+            Console.Write("Preço: ");
+            produtos[i].preco = double.Parse(Console.ReadLine());
+
+            Console.Write("Quantidade: ");
+            produtos[i].quantidade = int.Parse(Console.ReadLine());
+
+            total += produtos[i].preco * produtos[i].quantidade;
+        }
+
+        Console.WriteLine("\nValor total em estoque: R$ " + total);
+    }
+}

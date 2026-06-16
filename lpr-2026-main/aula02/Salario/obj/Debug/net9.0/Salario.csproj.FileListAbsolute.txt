@@ -1,0 +1,14 @@
+C:\Users\Alunos\Desktop\LPR_2026\aula02\Salario\bin\Debug\net9.0\Salario.exe
+C:\Users\Alunos\Desktop\LPR_2026\aula02\Salario\bin\Debug\net9.0\Salario.deps.json
+C:\Users\Alunos\Desktop\LPR_2026\aula02\Salario\bin\Debug\net9.0\Salario.runtimeconfig.json
+C:\Users\Alunos\Desktop\LPR_2026\aula02\Salario\bin\Debug\net9.0\Salario.dll
+C:\Users\Alunos\Desktop\LPR_2026\aula02\Salario\bin\Debug\net9.0\Salario.pdb
+C:\Users\Alunos\Desktop\LPR_2026\aula02\Salario\obj\Debug\net9.0\Salario.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alunos\Desktop\LPR_2026\aula02\Salario\obj\Debug\net9.0\Salario.AssemblyInfoInputs.cache
+C:\Users\Alunos\Desktop\LPR_2026\aula02\Salario\obj\Debug\net9.0\Salario.AssemblyInfo.cs
+C:\Users\Alunos\Desktop\LPR_2026\aula02\Salario\obj\Debug\net9.0\Salario.csproj.CoreCompileInputs.cache
+C:\Users\Alunos\Desktop\LPR_2026\aula02\Salario\obj\Debug\net9.0\Salario.dll
+C:\Users\Alunos\Desktop\LPR_2026\aula02\Salario\obj\Debug\net9.0\refint\Salario.dll
+C:\Users\Alunos\Desktop\LPR_2026\aula02\Salario\obj\Debug\net9.0\Salario.pdb
+C:\Users\Alunos\Desktop\LPR_2026\aula02\Salario\obj\Debug\net9.0\Salario.genruntimeconfig.cache
+C:\Users\Alunos\Desktop\LPR_2026\aula02\Salario\obj\Debug\net9.0\ref\Salario.dll

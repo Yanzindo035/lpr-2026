@@ -1,0 +1,49 @@
+using System;
+
+struct Livro
+{
+    public string titulo;
+    public string autor;
+    public int ano;
+    public int paginas;
+    public double preco;
+}
+
+class Program
+{
+    static void Main()
+    {
+        Livro[] livros = new Livro[3];
+
+        double totalPreco = 0;
+        int totalPaginas = 0;
+
+        for (int i = 0; i < 3; i++)
+        {
+            Console.WriteLine("Livro " + (i + 1));
+
+            Console.Write("Título: ");
+            livros[i].titulo = Console.ReadLine();
+
+            Console.Write("Autor: ");
+            livros[i].autor = Console.ReadLine();
+
+            Console.Write("Ano: ");
+            livros[i].ano = int.Parse(Console.ReadLine());
+
+            Console.Write("Número de páginas: ");
+            livros[i].paginas = int.Parse(Console.ReadLine());
+
+            Console.Write("Preço: ");
+            livros[i].preco = double.Parse(Console.ReadLine());
+
+            totalPreco += livros[i].preco;
+            totalPaginas += livros[i].paginas;
+        }
+
+        double mediaPaginas = totalPaginas / 3.0;
+
+        Console.WriteLine("\nPreço total dos livros: R$ " + totalPreco);
+        Console.WriteLine("Média de páginas: " + mediaPaginas);
+    }
+}

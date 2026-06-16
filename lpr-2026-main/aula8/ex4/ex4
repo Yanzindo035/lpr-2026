@@ -1,0 +1,125 @@
+using System;
+
+struct Heroi
+{
+    public string nome;
+    public string poder;
+    public int pontuacao;
+}
+
+class Program
+{
+    static Heroi[] herois = new Heroi[5];
+    static int[] equipe = new int[3];
+
+    static void cadastrarHeroi()
+    {
+        for (int i = 0; i < 5; i++)
+        {
+            Console.WriteLine("Herói " + (i + 1));
+
+            Console.Write("Nome: ");
+            herois[i].nome = Console.ReadLine();
+
+            Console.Write("Poder: ");
+            herois[i].poder = Console.ReadLine();
+
+            Console.Write("Pontuação: ");
+            herois[i].pontuacao = int.Parse(Console.ReadLine());
+
+            Console.WriteLine();
+        }
+    }
+
+    static void selecionarEquipe()
+    {
+        Console.WriteLine("\nHeróis cadastrados:");
+
+        for (int i = 0; i < 5; i++)
+        {
+            Console.WriteLine(i + " - " + herois[i].nome +
+                              " | Poder: " + herois[i].poder +
+                              " | Pontuação: " + herois[i].pontuacao);
+        }
+
+        Console.WriteLine("\nEscolha 3 heróis:");
+
+        for (int i = 0; i < 3; i++)
+        {
+            Console.Write("Digite o número do herói: ");
+            equipe[i] = int.Parse(Console.ReadLine());
+        }
+    }
+
+    static int calcularPontuacaoTotal()
+    {
+        int total = 0;
+
+        for (int i = 0; i < 3; i++)
+        {
+            total += herois[equipe[i]].pontuacao;
+        }
+
+        return total;
+    }
+
+    static void exibirEquipe()
+    {
+        Console.WriteLine("\nEquipe escolhida:");
+
+        for (int i = 0; i < 3; i++)
+        {
+            Console.WriteLine("Nome: " + herois[equipe[i]].nome);
+            Console.WriteLine("Poder: " + herois[equipe[i]].poder);
+            Console.WriteLine("Pontuação: " + herois[equipe[i]].pontuacao);
+            Console.WriteLine();
+        }
+
+        Console.WriteLine("Pontuação total: " + calcularPontuacaoTotal());
+    }
+
+    static void menuPrincipal()
+    {
+        int opcao;
+
+        do
+        {
+            Console.WriteLine("\n1 - Cadastrar heróis");
+            Console.WriteLine("2 - Selecionar equipe");
+            Console.WriteLine("3 - Exibir equipe");
+            Console.WriteLine("4 - Sair");
+
+            Console.Write("Escolha: ");
+            opcao = int.Parse(Console.ReadLine());
+
+            switch (opcao)
+            {
+                case 1:
+                    cadastrarHeroi();
+                    break;
+
+                case 2:
+                    selecionarEquipe();
+                    break;
+
+                case 3:
+                    exibirEquipe();
+                    break;
+
+                case 4:
+                    Console.WriteLine("Programa encerrado.");
+                    break;
+
+                default:
+                    Console.WriteLine("Opção inválida.");
+                    break;
+            }
+
+        } while (opcao != 4);
+    }
+
+    static void Main()
+    {
+        menuPrincipal();
+    }
+}
