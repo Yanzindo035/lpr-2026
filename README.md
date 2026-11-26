@@ -106,6 +106,20 @@ Introdução a estruturas dinâmicas utilizadas para armazenar e trabalhar com c
 * `auto` no C++
 
 ---
+### 🧩 Aula 10 — Programação Orientada a Objetos (POO)
+
+Introdução à programação orientada a objetos, que organiza o código em classes e objetos. Cada objeto reúne dados e comportamentos.
+
+- Classes e objetos
+- Atributos e métodos
+- Criação de classes e objetos em C# e C++
+- Construtores
+- Encapsulamento
+- Métodos de acesso (`get` e `set`)
+- Relacionamentos entre classes
+
+---
+
 
 ## 🛠️ Tecnologias
 
